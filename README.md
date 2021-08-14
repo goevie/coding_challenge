@@ -5,12 +5,12 @@ This is a simple coding challenge to be written in Node JS
 
 Write the logic for the reverseSentence function in reverse.js.  Create a command line app that uses the function.
 
-    npm start "please reverse this sentence" word letter
+    npm start "please reverse this sentence" --word --letter
 
     where 
     
-    word - reverse the order of the words
-    letter - reverse the order of the letters within each word
+    --word - reverse the order of the words
+    --letter - reverse the order of the letters within each word
 
 ### Specification
 
