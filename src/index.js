@@ -5,11 +5,11 @@ const args = require('yargs')(process.argv.slice(2))
 let string  = args.argv._[0];
 let arg1, arg2 = false;
 
-if (args.argv._.indexOf('letter') < 0) {
+if (args.argv._.indexOf('letter') > 0) {
     arg1 = true;
 }
 
-if (args.argv._.indexOf('word') < 0) {
+if (args.argv._.indexOf('word') > 0) {
     arg2 = true;
 }
 
