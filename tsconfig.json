@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": false,
+    "types": ["node", "mocha"],
+  },
+  "lib": ["es2015"],
+  "include": ["./src"],
+  "ts-node": {
+    "files": true
+  },
+  "exclude": [
+      "dist",
+      "node_modules",
+  ],
+}
