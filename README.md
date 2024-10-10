@@ -26,6 +26,10 @@ Ultimately, this will be run as a node application, so add code in src/index.ts 
 
 ### Node scripts
 
+you need to install the dependencies first
+
+    npm install
+
 you can run the tests using - you do not need to build before running the tests
 
     npm test
