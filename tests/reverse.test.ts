@@ -53,13 +53,13 @@ describe("reverseSentence", () => {
     );
   });
 
-  it("should handle an empty string", () => {
+  it("should throw an error for empty input", () => {
     const sentence = "";
     const reverseWords = true;
     const reverseLetters = true;
 
-    expect(reverseSentence(sentence, reverseWords, reverseLetters)).to.equal(
-      "Input sentence is empty."
+    expect(() => reverseSentence(sentence, reverseWords, reverseLetters)).to.throw(Error,
+      "Invalid input-Sentence must be a non-empty string."
     );
   });
 
