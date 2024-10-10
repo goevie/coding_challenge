@@ -52,4 +52,24 @@ describe("reverseSentence", () => {
       "ecnetnes a si siht"
     );
   });
+
+  it("should handle an empty string", () => {
+    const sentence = "";
+    const reverseWords = true;
+    const reverseLetters = true;
+
+    expect(reverseSentence(sentence, reverseWords, reverseLetters)).to.equal(
+      "Input sentence is empty."
+    );
+  });
+
+  it("should keep the single word when passed true false", () => {
+    const sentence = "word";
+    const reverseWords = true;
+    const reverseLetters = false;
+
+    expect(reverseSentence(sentence, reverseWords, reverseLetters)).to.equal(
+      "word"
+    );
+  });
 });

@@ -2,7 +2,7 @@ import { reverseSentence } from "./reverse";
 
 // Extract command-line arguments
 const args = process.argv.slice(2);
-console.log(args, process.argv);
+
 
 if (args.length === 0 || args.length > 3) {
     console.error("Pls provide valid args in command line");
@@ -12,7 +12,7 @@ if (args.length === 0 || args.length > 3) {
 // Find the index of the first non-flag argument (the sentence)
 const sentenceIndex = args.findIndex(arg => !arg.startsWith("--"));
 const sentence = args[sentenceIndex];
-console.log(sentenceIndex, sentence)
+
 
 //Flags for whether reverse word/letters
 const isReverseWords = args.includes("--word");
