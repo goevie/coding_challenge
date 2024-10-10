@@ -3,9 +3,9 @@ export const reverseSentence = (
   reverseWords: boolean,
   reverseLetters: boolean
 ): string => {
-  // Edge case: check if the sentence is empty or contains only whitespace
-  if (!sentence.trim()) {
-    return "Input sentence is empty.";
+  // Edge case: check if the sentence is empty or contains only whitespace and type of sentence
+  if (!sentence || !sentence.trim()) {
+    throw new Error("Invalid input-Sentence must be a non-empty string.");
   }
 
   let words = sentence.trim().split(" "); // Split by one space
